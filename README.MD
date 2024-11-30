@@ -1,55 +1,120 @@
-# Space Invaders
+# Stellar Defense: Endless Guardian 
 
-This project is a recreation of the classic arcade game, Space Invaders, implemented in Python using the Pygame library. The gameplay involves controlling a spaceship to destroy invading alien ships.
+A modern take on classic arcade shoot-em-up games, where you defend Earth from endless waves of alien invaders.
 
-# Special Thanks
-This project was inspired by the Space Invaders arcade game developed by Tomohiro Nishikado.
+## Game Overview
 
-# Project Structure
-The project has the following file and folder structure:
+In Stellar Defense, you are Earth's last line of defense against an unrelenting alien invasion. Unlike traditional arcade shooters, this game features an endless mode where waves of aliens become progressively more challenging as you advance.
 
-## src
-This folder contains the source code files for the game:
+### Key Features
 
-* ###### main.py: The main entry point of the game. It manages the game loop and event handling.
-* ###### game.py: This file contains the Game class, handling the overall game logic including collision checks, scoring and sound effects. It integrates other classes to provide complete gameplay.
-* ###### alien.py: This file contains the Alien class representing the alien invaders. Each alien object handles its own movement and rendering.
-* ###### crt.py: This file provides a retro CRT screen effect for the game.
-* ###### laser.py: Contains the Laser class representing lasers shot by both the player and aliens. This includes the logic for movement and rendering of lasers.
-* ###### obstacle.py: This file contains the Obstacle class representing barriers that can block lasers. Each obstacle has its own hit points and is removed after taking a certain amount of damage.
-* ###### player.py: This file contains the Player class representing the player-controlled spaceship. This includes logic for movement, firing lasers, and rendering the spaceship.
-* ###### settings.py: This file defines the game's settings and constants such as screen resolution, alien speed, laser speed, etc.
+- Endless Arcade Action
+- Dynamic Enemy Spawning
+- Particle Effect System
+- Dynamic Sound Effects
+- High Score System
+- Atmospheric Starfield Background
 
-## audio
-This folder contains audio files used in the game for background music and sound effects:
+## Getting Started
 
-* ###### explosion.wav: The sound effect that is played when an alien is destroyed.
-* ###### laser.wav: The sound effect for laser shots fired by the player's spaceship.
-* ###### music.wav: The background music that plays during the game.
+### Prerequisites
 
-## font
-This folder contains font files used for displaying text in the game:
+- Python 3.8+
+- Pygame 2.6.1+
 
-* ###### Pixeled.ttf: The font used for displaying score and other textual information on the screen.
+### Installation
 
-## graphics
-This folder contains image files used for the game's visuals:
+1. Clone the repository:
+```bash
+git clone [your-repository-url]
+```
 
-* ###### extra.png: The image for the extra bonus items that appear occasionally in the game.
-* ###### green.png, red.png, yellow.png: Images for different types of alien invaders.
-* ###### player.png: The image for the player's spaceship.
-* ###### tv.png: The image used for the CRT screen effect.
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-# Instructions
-To run the project, follow these steps:
+3. Run the game:
+```bash
+python src/main.py
+```
 
-1. Install Python 3 if you haven't already.
-2. Install the Pygame library by running the command: `pip install pygame`.
-3. Navigate to the project's src directory.
-4. Run the command: `python3 src/main.py`.
+## How to Play
 
-Ensure that the required resources (images, sounds, etc.) are in the appropriate directories as indicated in the folder structure.
+- **Movement**: Use LEFT/RIGHT arrow keys to move your ship
+- **Shooting**: SPACE to fire lasers
+- **Pause**: ESC to pause the game
+- **Restart**: SPACE during game over to restart
 
-Feel free to modify and explore the game to suit your needs.
+### Game Mechanics
 
-Enjoy playing!
+- Your ship can wrap around screen edges
+- Aliens descend from the top of the screen
+- Random bonus UFOs appear occasionally
+- Collect power-ups to enhance your capabilities
+- Score increases with each alien destroyed
+
+## Technical Details
+
+### Built With
+- Python 3.13.0
+- Pygame 2.6.1
+- Custom Particle System
+- State Management System
+
+### Architecture Highlights
+- Modular game state system
+- Entity component system
+- Dynamic particle effects
+- Efficient collision detection
+- Configurable game settings
+
+## Features
+
+### Current Features
+- Endless gameplay mode
+- Dynamic enemy spawning
+- Particle effect system
+- Screen-wrapping movement
+- Score tracking
+- Lives system
+- Sound effects
+- Background music
+- Pause functionality
+
+### Planned Features
+- Power-up system
+- Advanced scoring system
+- Multiple enemy types
+- Achievement system
+- Local high scores
+- Enhanced visual effects
+
+## Development
+
+The game is structured using modern Python practices and follows object-oriented principles. Key components include:
+
+- State Management System
+- Entity Component System
+- Particle Effect Engine
+- Sound Management
+- Configuration System
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Credits
+
+Developed by Josue Barros (2025)
+Graphics and sound assets from various open-source resources.
+
+## Contact
+
+Josue Barros - [Your Contact Information]
+
+Project Link: [Your Repository URL]
